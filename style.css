@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container-body{
+    width: 100%;
+    height: 100%;
+    display: grid;
+   place-items: center;
+}
+h1{
+    color: red;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Pushster', cursive;
+    font-size: 35px;
+    top: 550px;
+    animation-name: letras;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes letras{
+    0%{
+      color: red;
+    }
+    25%{
+       color: yellow;
+    }
+    50%{
+      color: white;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: red;
+    }
+}
+.container{
+    height: 100px;
+    width: 100px;
+    display: grid;
+    place-items: start;
+    justify-content: center;
+}
+.container1{
+    height: 500px;
+    width: 300px;
+    display: grid;
+    place-items: start;
+    justify-content: center;
+}
+
+.estrella1{
+    height: 7px;
+    width: 7px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation-name: moverEstrella1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    box-shadow: 3px 3px 1px yellow;
+}
+
+.arbol1{
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    animation-name: arbol1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    box-shadow: 3px 6px 1px rgb(15, 228, 15);
+}
+.arbol1:hover{
+  background-color: red;
+}
+@keyframes moverEstrella1{
+    0%{
+        transform: translate(50px,0px);
+        background-color: yellow;
+    }
+    9.09%{
+       transform: translate(40px,33px);
+       
+    }
+    18.18%{
+        transform: translate(3px,33px);
+       
+    }
+    27.27%{
+        transform: translate(35px,50px);
+        
+    }
+    36.36%{
+        transform: translate(15px,90px);
+        
+    }
+    45.45%{
+        transform: translate(50px,60px);
+        background-color: olive;
+       
+    }
+    63.63%{
+        transform: translate(85px,90px);
+       
+    }
+    72.72%{
+        transform: translate(65px,50px);
+        
+    }
+    81.81%{
+        transform: translate(97px,33px);
+        
+    }
+    90.90%{
+        transform: translate(65px,33px);
+       
+    }
+    100%{
+        transform: translate(50px,0px);
+        background-color: yellow;
+    }
+}
+
+@keyframes arbol1{
+    0%{
+        transform: translate(150px,0px);
+        background-color: rgb(0, 255, 0);
+    }
+    6.25%{
+       transform: translate(100px,75px);
+       
+    }
+    12.5%{
+        transform: translate(140px,75px);
+       
+    }
+    18.75%{
+        transform: translate(60px,200px);
+        
+    }
+    25%{
+        transform: translate(130px,200px);
+        
+    }
+    31.25%{
+        transform: translate(40px,325px);
+        background-color: green;
+       
+    }
+    37.5%{
+        transform: translate(90px,325px);
+       
+    }
+    43.75%{
+        transform: translate(10px,450px);
+        
+    }
+    50%{
+        transform: translate(150px,440px);
+       
+    }
+    56.25%{
+        transform: translate(290px,450px);
+        background-color: rgb(72, 255, 0);
+    }
+    62.5%{
+        transform: translate(210px,325px);
+        
+    }
+    68.75%{
+        transform: translate(260px,325px);
+         
+    }
+     75%{
+        transform: translate(170px,200px);
+         
+     }
+     81.25%{
+        transform: translate(240px,200px);
+        background-color: olive;
+        
+     }
+     87.5%{
+        transform: translate(160px,75px);
+        
+     }
+     93.75%{
+        transform: translate(200px,75px);
+         
+     }
+     100%{
+        transform: translate(150px,0px);
+         
+     }
+}
+
